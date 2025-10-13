@@ -1,0 +1,12 @@
+langchain-core
+pydantic
+beautifulsoup4
+langchain
+langgraph
+langchainhub
+langchain-community
+langchain-tavily
+langchain-chroma
+python-dotenv
+pytest
+langchain-openai
