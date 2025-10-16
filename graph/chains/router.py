@@ -22,8 +22,8 @@ llm = ChatOpenAI(model='gpt-5-nano', temperature=0)
 structured_llm_router = llm.with_structured_output(RouteQuery)
 
 system = """
-You are an expert at routing a user question to a vectorseach or web search.
-The vektorsearch contains documents related to agents, prompt engineering and adversarial attacks.
+You are an expert at routing a user question to a vectorsearch or web search.
+The vectorsearch contains documents related to agents, prompt engineering and adversarial attacks.
 Use the vectorsearch for questions on these topics. For all else use web search.
 """
 

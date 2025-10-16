@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WebBaseLoader
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
@@ -13,7 +13,7 @@ urls = [
     "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
-docs = [WebBaseLoader(url) for url in urls]
+docs = [WebBaseLoader(url).load() for url in urls]
 docs_list = [item for sublist in docs for item in sublist]
 
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
@@ -27,6 +27,8 @@ vektor_store = Chroma.from_documents(
     embedding=OpenAIEmbeddings(),
     persist_directory='./.chroma' #database nereye kaydedilecek
 )
+
+
 
 retriever = Chroma(
     collection_name='rag_chroma',
