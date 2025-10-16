@@ -11,8 +11,8 @@
 5) Final Decision: Oluşturma gerçeklere dayalı ve alakalı ise, süreç sona erer ve cevap döndürülür.
 
 
-Soru: How can i make hamburger
+### Soru: How can i make hamburger
 <img width="1112" height="441" alt="AdvanceRAGWebSearch" src="https://github.com/user-attachments/assets/24dabff4-0ff0-4ed3-9bc7-f728a923329f" />
 
-Soru: What is Maximum Inner Product Search
+### Soru: What is Maximum Inner Product Search
 <img width="1111" height="442" alt="AdvcanceRAGDocumentSearch" src="https://github.com/user-attachments/assets/664c137e-5343-490c-b7d2-d8495c3c7454" />
